@@ -36,6 +36,8 @@ models/balanced_fold_3.pt
 models/balanced_fold_4.pt
 models/balanced_fold_5.pt
 
+
+
 Step 2: Prediction
 Only one prediction mode is kept: PPI-based prediction.
 
@@ -46,8 +48,11 @@ Background proteome FASTA file
 Optional precomputed ESM cache file
 This means that end users only need to provide a protein FASTA file and select the species.
 The system will then output a prediction result table for the target proteins.
+
 Example Prediction Command
 For Arabidopsis thaliana, an example command is:
+
+
 python predict.py --mode ppi \
     --input ara_rbp_10.fasta \
     --model_dir ./models \
